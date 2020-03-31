@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="codetheme.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Asap:wght@400&family=Inconsolata&display=swap"
+        rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script defer src="script.js"></script>
+    <title>Mint</title>
+</head>
+
+<body>
+    <section class="page-height" id="first-page">
+        <div id="first-page-inner">
+            <div class="center-row">
+                <h1><img src="logo.svg" /> Mint</h1>
+            </div>
+            <p>a refreshing way to make websites.</p>
+        </div>
+    </section>
+    <section class="page-height" id="second-page">
+        <div class="split">
+            <div class="pad">
+                <br>
+                <h1 class="other-font">Mint is designed for <span id="mint-is-used-for"></span></h1>
+                <h1 class="other-font"><span class="underline">not</span> production websites.</h1>
+                <br>
+                <p class="other-font">Here's how it works:</p>
+            </div>
+            <pre class="pad" style="padding-left: 0;"><code class="python">import pymint as mint
+
+class App(mint.App):
+    def __init__(self):
+	super(self)
+        self.a = mint.Variable(0)
+
+    def render(self):
+        return mint.Element(
+            "div",
+            {},
+            [
+                mint.Element(
+                    "h1", {}, [mint.Text("Home - clicked ", self.a, " times!")]
+                ),
+                mint.Element(
+                    "button", {"@click": self.clicked}, [mint.Text("Click me!")]
+                )
+            ]
+        )
+
+    def clicked(self):
+        self.a += 1
+</code></pre>
+        </div>
+    </section>
+</body>
+
+</html>

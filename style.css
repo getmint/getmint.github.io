@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: 'Asap', sans-serif;
+  font-size: 24px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Barlow', sans-serif;
+}
+
+.page-height {
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+#first-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #aaffee, #d5fff6);
+}
+
+#first-page-inner {
+  background: #fafafa;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#first-page h1 {
+  font-size: 96px;
+  display: flex;
+  align-items: center;
+}
+
+#first-page img {
+  height: 80px;
+  margin-right: 20px;
+}
+
+#second-page {
+  background: #fafafa;
+}
+
+.split {
+  display: flex;
+}
+
+.split > * {
+  width: 50%;
+}
+
+.pad {
+  padding: 32px;
+}
+
+pre {
+  margin: 0;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+}
+
+#mint-is-used-for {
+  transition: opacity .1s ease;
+}
+
+.other-font {
+  font-family: 'Asap', sans-serif;
+}
